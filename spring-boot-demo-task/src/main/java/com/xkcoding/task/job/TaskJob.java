@@ -20,7 +20,7 @@ import java.util.Date;
  * @version: V1.0
  * @modified: yangkai.shen
  */
-@Component
+//@Component
 @Slf4j
 public class TaskJob {
 

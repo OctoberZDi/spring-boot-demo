@@ -27,19 +27,24 @@ import javax.servlet.http.HttpServletRequest;
 @RequestMapping("/user")
 @Slf4j
 public class UserController {
-	@PostMapping("/login")
-	public ModelAndView login(User user, HttpServletRequest request) {
-		ModelAndView mv = new ModelAndView();
 
-		mv.addObject(user);
-		mv.setViewName("redirect:/");
+    public String testHutool() {
+        return "";
+    }
 
-		request.getSession().setAttribute("user", user);
-		return mv;
-	}
+    @PostMapping("/login")
+    public ModelAndView login(User user, HttpServletRequest request) {
+        ModelAndView mv = new ModelAndView();
 
-	@GetMapping("/login")
-	public ModelAndView login() {
-		return new ModelAndView("page/login");
-	}
+        mv.addObject(user);
+        mv.setViewName("redirect:/");
+
+        request.getSession().setAttribute("user", user);
+        return mv;
+    }
+
+    @GetMapping("/login")
+    public ModelAndView login() {
+        return new ModelAndView("page/login");
+    }
 }

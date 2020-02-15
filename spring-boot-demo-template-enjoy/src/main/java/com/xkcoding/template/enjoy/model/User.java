@@ -1,5 +1,6 @@
 package com.xkcoding.template.enjoy.model;
 
+import lombok.Builder;
 import lombok.Data;
 
 /**
@@ -16,7 +17,8 @@ import lombok.Data;
  * @modified: yangkai.shen
  */
 @Data
+@Builder
 public class User {
-	private String name;
-	private String password;
+    private String name;
+    private String password;
 }

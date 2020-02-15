@@ -2,7 +2,7 @@ server:
   port: 8080
   servlet:
     context-path: /demo
-# 下面的配置等同于 TaskConfig
+# 下面的配置v等同于 TaskConfig
 #spring:
 #  task:
 #    scheduling:

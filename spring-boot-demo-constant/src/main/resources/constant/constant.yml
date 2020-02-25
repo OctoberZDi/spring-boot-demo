@@ -1,0 +1,14 @@
+display:
+  html:
+    index: display/index.html
+    htmldisplayItem: display/display.html
+com:
+  slide:
+    name: forezp
+    age: 12
+    slideInfos[0]:
+      Id: aaaa
+      Name: ddihua
+    slideInfos[1]:
+      Id: 123456
+      Name: lihua
